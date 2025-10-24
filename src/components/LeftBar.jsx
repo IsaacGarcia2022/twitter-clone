@@ -2,7 +2,7 @@ import sprite from '../assets/sprite.svg?raw'
 
 export default function Leftbar() {
   return (
-    <div className="flex justify-center p-0 bg-black border-r-[0.01px] border-r-gray-400/75 shadow h-full sticky top-4">
+    <div className="sticky top-0 h-screen flex justify-center p-0 bg-black border-r-[0.01px] border-r-gray-400/75 shadow">
       <div dangerouslySetInnerHTML={{ __html: sprite }} />
       <ul className="space-y-3">
         <li className="flex items-center gap-4 hover:bg-gray-900 p-2 rounded-full cursor-pointer w-min">
