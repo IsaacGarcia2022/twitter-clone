@@ -1,12 +1,15 @@
-import './App.css'
-
+import { Routes, Route } from 'react-router-dom'
+import MainLayout from './layouts/MainLayaout'
+import HomePage from './pages/HomePage'
 function App() {
-
   return (
-    <>
-    <h1>Hola mundo</h1>
-    </>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<HomePage />} />
+      </Route>
+    </Routes>
   )
 }
 
 export default App
+
