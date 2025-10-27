@@ -1,3 +1,4 @@
+import BtnTweetComposer from "./BtnTweetComposer"
 export default function TweetComposer() {
   return (
     <div className="flex flex-col p-4 bg-black rounded-md shadow-sm">
@@ -16,45 +17,17 @@ export default function TweetComposer() {
       </div>
       <div className="flex w-full items-center justify-between">
         <div className="flex w-full ml-10">
-          <button className="flex items-center p-3 transition-colors duration-200 text-blue-500 hover:text-blue-500 text-center rounded-full bg-black hover:bg-gray-950 cursor-pointer">
-            <svg className="size-6">
-             <use href="#icon-multimedia" />
-            </svg>
-          </button>
-          <button className="flex items-center p-3 transition-colors duration-200 text-blue-500 hover:text-blue-500 text-center rounded-full bg-black hover:bg-gray-950 cursor-pointer">
-            <svg className="size-6">
-             <use href="#icon-gif" />
-            </svg>
-          </button>
-          <button className="flex items-center p-3 transition-colors duration-200 text-blue-500 hover:text-blue-500 text-center rounded-full bg-black hover:bg-gray-950 cursor-pointer">
-            <svg className="size-6">
-             <use href="#icon-grok" />
-            </svg>
-          </button>
-          <button className="flex items-center p-3 transition-colors duration-200 text-blue-500 hover:text-blue-500 text-center rounded-full bg-black hover:bg-gray-950 cursor-pointer">
-            <svg className="size-6">
-             <use href="#icon-encuesta" />
-            </svg>
-          </button>
-          <button className="flex items-center p-3 transition-colors duration-200 text-blue-500 hover:text-blue-500 text-center rounded-full bg-black hover:bg-gray-950 cursor-pointer">
-            <svg className="size-6">
-             <use href="#icon-emoji" />
-            </svg>
-          </button>
-          <button className="flex items-center p-3 transition-colors duration-200 text-blue-500 hover:text-blue-500 text-center rounded-full bg-black hover:bg-gray-950 cursor-pointer">
-            <svg className="size-6">
-             <use href="#icon-programacion" />
-            </svg>
-          </button>
-          <button className="flex items-center p-3 transition-colors duration-200 text-blue-500 hover:text-blue-500 text-center rounded-full bg-black hover:bg-gray-950 cursor-pointer">
-            <svg className="size-6">
-             <use href="#icon-ubicacion" />
-            </svg>
-          </button>
+          <BtnTweetComposer sizeIcon={"size-6" } nameIcon={"#icon-multimedia"}/>
+          <BtnTweetComposer sizeIcon={"size-6" } nameIcon={"#icon-gif"}/>
+          <BtnTweetComposer sizeIcon={"size-6" } nameIcon={"#icon-grok"}/>
+          <BtnTweetComposer sizeIcon={"size-6" } nameIcon={"#icon-encuesta"}/>
+          <BtnTweetComposer sizeIcon={"size-6" } nameIcon={"#icon-emoji"}/>
+          <BtnTweetComposer sizeIcon={"size-6" } nameIcon={"#icon-programacion"}/>
+          <BtnTweetComposer sizeIcon={"size-6" } nameIcon={"#icon-ubicacion"}/>
         </div>
         <button className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-full">
-        Twittear
-      </button>
+          Postear
+        </button>
       </div>
     </div>
   )
